@@ -3,7 +3,7 @@ use addcomb_comp::setlike::SetLike;
 use addcomb_comp::setlike::Group;
 
 /// Compute whether there is a set A of size two such that [ia, ib]A = G
-/// If there is such a set, this function returns one. Otherwise, it returns None.
+/// If there is such a set, this function returns one of these sets. Otherwise, it returns None.
 fn do_two_elements_span<S: SetLike>(n: S::Group, (ia, ib): (u32, u32)) -> Option<S> {
     let g_size = n.gsize();
     for a in S::each_set_exact(n.clone(), 2) {
