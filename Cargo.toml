@@ -1,0 +1,8 @@
+[package]
+name = "addcomb_kyle"
+version = "0.1.0"
+authors = ["Matthew Torrence <matt@torrencefamily.net>"]
+edition = "2018"
+
+[dependencies]
+addcomb_comp = { git = "https://github.com/Torrencem/addcomb-comp", branch = "main" }
